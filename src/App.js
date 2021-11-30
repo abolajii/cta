@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {
+	FooterContainer,
+	BlogContainer,
+	PossibilityContainer,
+	HeaderContainer,
+	NextFeatureContainer,
+	WhatGPT3Container,
+	CTAContainer,
+	BrandContainer,
+	NavbarContainer,
+} from './container';
+import { Gradient } from './globalstyles/styles';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<>
+			<Gradient>
+				<NavbarContainer />
+				<HeaderContainer />
+			</Gradient>
+			<BrandContainer />
+			<WhatGPT3Container />
+			<NextFeatureContainer />
+			<PossibilityContainer />
+			<CTAContainer />
+			<BlogContainer />
+			<FooterContainer />
+		</>
+	);
+};
 
 export default App;
