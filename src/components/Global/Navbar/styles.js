@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import { scaleUp } from '../../../globalstyles/styles';
-import { largeResponsive } from '../../../responsive/responsive';
+import {
+	largeResponsive,
+	mobileResponsive,
+} from '../../../responsive/responsive';
 
 export const Container = styled.div`
 	font-family: Roboto;
@@ -11,6 +14,8 @@ export const Inner = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	padding: 2rem 6rem;
+
+	${mobileResponsive({ padding: '2rem' })}
 `;
 
 export const Links = styled.div`

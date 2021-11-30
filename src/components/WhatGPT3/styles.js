@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { mobileResponsive } from '../../responsive/responsive';
 
 export const Container = styled.div``;
 
@@ -80,4 +81,6 @@ export const Feature = styled.div``;
 export const Bottom = styled.div`
 	display: flex;
 	margin-top: 2rem;
+
+	${mobileResponsive({ flexDirection: 'column' })}
 `;

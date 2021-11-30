@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { mobileResponsive } from '../../responsive/responsive';
 
 export const Container = styled.div``;
 
@@ -7,6 +8,8 @@ export const Inner = styled.div`
 	border-radius: 10px;
 	display: flex;
 	background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+
+	${mobileResponsive({ flexDirection: 'column', height: 'auto' })}
 `;
 
 export const BoxOne = styled.div`
@@ -16,6 +19,7 @@ export const BoxOne = styled.div`
 	display: flex;
 	/* align-items: center; */
 	justify-content: center;
+	${mobileResponsive({ flex: '1' })}
 `;
 
 export const SmallText = styled.p`
@@ -31,6 +35,10 @@ export const Text = styled.p`
 	font-weight: 800;
 	line-height: 45px;
 	color: #000;
+	${mobileResponsive({
+		fontSize: 24,
+		lineHeight: '30px',
+	})}
 `;
 
 export const BoxTwo = styled.div`
@@ -38,6 +46,9 @@ export const BoxTwo = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	${mobileResponsive({
+		paddingBottom: '2rem',
+	})}
 `;
 
 export const Button = styled.button`

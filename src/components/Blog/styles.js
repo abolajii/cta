@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { largeResponsive, mobileResponsive } from '../../responsive/responsive';
 
 export const Container = styled.div``;
 
@@ -13,6 +14,7 @@ export const Text = styled.h1`
 	line-height: 70px;
 	/* text-align: left; */
 	max-width: 60%;
+	${largeResponsive({ maxWidth: '100%' })}
 `;
 
 export const GridContainer = styled.div`
@@ -21,6 +23,7 @@ export const GridContainer = styled.div`
 	/* background-color: red; */
 	gap: 20px;
 	margin-top: 6rem;
+	${largeResponsive({ flexDirection: 'column' })}
 `;
 
 export const FirstGrid = styled.div`
@@ -34,6 +37,7 @@ export const SecondGrid = styled.div`
 	gap: 20px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	${mobileResponsive({ gridTemplateColumns: '1fr' })}
 `;
 
 export const Card = styled.div`
@@ -88,12 +92,14 @@ export const SmallText = styled.p`
 		down &&
 		css`
 			margin-top: 2.5rem;
+			${largeResponsive({ marginTop: '.5rem' })}
 		`}
 	${({ first, down }) =>
 		down &&
 		first &&
 		css`
 			margin-top: 14rem;
+			${largeResponsive({ marginTop: '12.5rem' })}
 		`}
 `;
 

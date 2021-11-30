@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { mobileResponsive } from '../../../responsive/responsive';
 
 export const Container = styled.div`
 	background: #031b34;
@@ -17,6 +18,8 @@ export const Title = styled.h1`
 	line-height: 75px;
 	text-align: center;
 	padding: 4rem;
+
+	${mobileResponsive({ padding: '1rem', fontSize: '38px', lineHeight: '45px' })}
 `;
 
 export const Bottom = styled.div`
@@ -26,6 +29,8 @@ export const Bottom = styled.div`
 	width: 100%;
 	padding: 4rem;
 	margin-top: 10rem;
+
+	${mobileResponsive({ flexDirection: 'column', padding: '1rem' })}
 `;
 
 export const BottomLogoContainer = styled.div`
@@ -67,6 +72,7 @@ export const Text = styled.p`
 		css`
 			margin: 2.5rem 0;
 		`}
+	${mobileResponsive({ fontSize: '9px', lineHeight: '10px' })}
 `;
 
 export const SmallText = styled.p`
@@ -88,4 +94,6 @@ export const BottomTwo = styled.div`
 	flex: 2;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+
+	${mobileResponsive({ gridTemplateColumns: 'repeat(1fr)' })}
 `;

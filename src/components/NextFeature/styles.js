@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { largeResponsive } from '../../responsive/responsive';
 
 export const Container = styled.div`
 	/* background: red; */
@@ -6,6 +7,7 @@ export const Container = styled.div`
 
 export const Inner = styled.div`
 	display: flex;
+	${largeResponsive({ flexDirection: 'column' })}
 `;
 
 export const Text = styled.h1`
@@ -27,4 +29,5 @@ export const BoxOne = styled.div`
 
 export const BoxTwo = styled.div`
 	flex: 1;
+	${largeResponsive({ marginTop: '3rem' })}
 `;

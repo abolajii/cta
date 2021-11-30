@@ -1,9 +1,11 @@
 import styled from 'styled-components';
+import { largeResponsive, mobileResponsive } from '../../responsive/responsive';
 
 export const Container = styled.div``;
 
 export const Inner = styled.div`
 	display: flex;
+	${largeResponsive({ flexDirection: 'column' })}
 `;
 
 export const BoxOne = styled.div`
@@ -16,6 +18,12 @@ export const BoxTwo = styled.div`
 	/* display: flex;
 	align-items: center;
 	justify-content: center; */
+	${largeResponsive({
+		marginTop: '5rem',
+		display: 'flex',
+		alignItems: 'center',
+		justifyContent: 'center',
+	})}
 `;
 
 export const Title = styled.h1`
@@ -78,6 +86,8 @@ export const Input = styled.input`
 	border: none;
 	background: #052d56;
 	border-radius: 5px 0px 0px 5px;
+
+	${mobileResponsive({ width: '65%' })}
 `;
 
 export const Button = styled.button`

@@ -40,7 +40,7 @@ const FooterContainer = () => {
 							</Footer.LinkContainer>
 							<Footer.LinkContainer>
 								<Footer.SmallText>get in touch</Footer.SmallText>
-								<Footer.Text>Crechterwoord K12 182 DK Alknjkcb</Footer.Text>
+								<Footer.Text>Crechterwoord</Footer.Text>
 								<Footer.Text>085-132567</Footer.Text>
 								<Footer.Text>info@payme.net</Footer.Text>
 							</Footer.LinkContainer>

@@ -6,7 +6,7 @@ import { blog1, blog2, blog3, blog4, blog5 } from './import';
 
 const BlogContainer = () => {
 	return (
-		<Blog>
+		<Blog id='blog'>
 			<SectionPadding>
 				<Blog.Inner>
 					<GradientText>

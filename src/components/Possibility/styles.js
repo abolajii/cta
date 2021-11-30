@@ -1,10 +1,14 @@
 import styled, { css } from 'styled-components';
+import { largeResponsive } from '../../responsive/responsive';
 
 export const Container = styled.div``;
 
 export const Inner = styled.div`
 	/* background-color: red; */
 	display: flex;
+	${largeResponsive({
+		flexDirection: 'column',
+	})}
 `;
 export const BoxOne = styled.div`
 	flex: 1;
@@ -17,6 +21,10 @@ export const BoxTwo = styled.div`
 	padding: 2rem;
 	padding-top: 12rem;
 	flex-direction: column;
+	${largeResponsive({
+		paddingTop: '7rem',
+		justifyContent: 'center',
+	})}
 `;
 
 export const ImageContainer = styled.div``;
